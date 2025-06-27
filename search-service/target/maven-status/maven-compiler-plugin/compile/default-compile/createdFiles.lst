@@ -1,0 +1,14 @@
+com\search\dto\fareDetailDTO.class
+com\search\controller\SearchController.class
+com\search\filter\RoleBasedAuthorizationFilter.class
+com\search\SearchServiceApplication.class
+com\search\config\SwaggerConfig.class
+com\search\dto\SearchResultDTO.class
+com\search\service\SearchService.class
+com\search\exception\NoFlightsFoundException.class
+com\search\config\SecurityConfig.class
+com\search\feign\FlightDetailsClient.class
+com\search\exception\GlobalExceptionHandler.class
+com\search\dto\FlightDetailsDTO.class
+com\search\dto\SearchCriteriaDTO.class
+com\search\feign\FareClient.class

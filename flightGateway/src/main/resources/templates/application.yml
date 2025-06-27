@@ -1,0 +1,29 @@
+
+#
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: user-service
+#          uri: http://localhost:8082
+#          predicates:
+#            - Path=/user/**
+#          filters:
+#            - AuthenticationFilter
+#
+#  application:
+#    name: FLIGHTGATEWAY
+#
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/users/**
+
